@@ -1,0 +1,166 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.back {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("cover.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+img {
+    width: 130px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -80%);
+}
+
+
+.container {
+    position: relative;
+    width: 360px;
+    margin: 5% auto;
+    height: 580px;
+    background: none;
+    padding: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+#register {
+    top: 80px;
+    height: 410px;
+    margin-left: -25px;
+    background: rgba(0,0,0,.6);
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    padding: 40px 25px 25px 25px;
+    border-radius: 25px;
+}
+#login {
+    top: 100px;
+    height: 350px;
+    margin-left: -25px;
+    background: rgba(0,0,0,.6);
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    padding: 40px 25px 25px 25px;
+    border-radius: 25px;
+    
+}
+.forms {
+    top: 5px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    
+}
+
+.input-box {
+    position: relative;
+    margin-top: 5px;
+}
+
+    .input-box input {
+        width: 100%;
+        margin-bottom: 35px;
+        padding: 12px 0;
+        color: #fff;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        background: transparent;
+        letter-spacing: 2px;
+    }
+
+    .input-box label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 14px;
+        color: white;
+        pointer-events: none;
+        transition: .5s;
+        letter-spacing: 2px;
+    }
+
+    .input-box input:focus ~ label, .input-box input:valid ~ label {
+        top: -25px;
+        left: 0;
+        color: aquamarine;
+        font-size: 16px;
+    }
+
+    .input-box input:focus, .input-box input:valid, .input-box input:hover {
+        border-bottom: 1px solid aquamarine;
+    }
+
+button {
+    background: aquamarine;
+    border: none;
+    outline: none;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+    button:hover, button:active {
+        background-color: lightseagreen;
+    }
+
+input[type="checkbox"] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 0.5px;
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.container .message {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.container .switch {
+    outline: none;
+    background: none;
+    color: aquamarine;
+    padding: 0;
+    border-radius: 0;
+}
+
+    .container .switch:hover, .container .switch:active {
+        background: none;
+        outline: none;
+        border-bottom: 1px solid aquamarine;
+    }
+
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+h1{
+    color: aquamarine;
+    text-align: center;
+    margin-bottom: 20px;
+}

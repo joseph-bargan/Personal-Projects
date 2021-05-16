@@ -1,0 +1,26 @@
+﻿  Main.cpp
+C:\Users\Joseph\source\repos\Project2\Main.cpp(172,71): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Joseph\source\repos\Project2\Main.cpp(172,64): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Joseph\source\repos\Project2\Main.cpp(221,19): warning C4244: 'initializing': conversion from 'WPARAM' to 'int', possible loss of data
+  Generating code
+  1 of 192 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Project2.vcxproj -> C:\Users\Joseph\source\repos\Project2\x64\Release\SoundBoard.exe

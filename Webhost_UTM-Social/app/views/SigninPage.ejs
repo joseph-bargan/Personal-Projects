@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/StyleSheet1.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <title>UTM Talk</title>
+</head>
+<body>
+    <div class="back">
+        
+        <div class="container">
+
+            <form method="post" class="forms" id="register">
+                <img class="avatar" src="avatar1.png">
+                <h1>Join Us</h1>
+                
+                <div class="input-box">
+                    <input type="text" name="email" required="">
+                    <label>E-mail</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="username" required="">
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" required="">
+                    <label>Password</label>
+                </div>
+                <button type ="submit">Create</button>
+                <br />
+                <br />
+                <p1 class="message">Already Registered?</p1>
+                <button type="button" class="switch" onclick="login()">Login</button>
+            </form>
+
+            <form action="/login" method="post" class="forms" id="login">
+                <img class="avatar" src="avatar1.png">
+                <h1>Login</h1>
+                
+                <div class="input-box">
+                    <input type="text" name="username" required="">
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" required="">
+                    <label>Password</label>
+                </div>
+                <p><span><input type="checkbox" name="rme"></span> Remember Me</p>
+                <button type= "submit">Login</button>
+                <br />
+                <br />
+                <p1 class="message">Not Registered?</p1>
+                <button type="button" class="switch" onclick="register()">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+
+        function register() {
+            x.style.left = "-450px";
+            y.style.left = "50px";
+
+        }
+        function login() {
+            y.style.left = "450px";
+            x.style.left = "50px";
+
+        }
+    </script>
+
+</body>
+</html>

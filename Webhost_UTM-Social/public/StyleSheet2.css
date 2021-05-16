@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.light-mode .delete {
+    color: cornflowerblue;
+}
+.light-mode .delete:hover, .light-mode .delete:active, .light-mode .delete:focus {
+    color: lightslategray;
+}
+.light-mode #posts, .light-mode #users{
+    color: black;
+}
+
+.light-mode .recent {
+    color: cornflowerblue;
+}
+.light-mode .mainbar ul li a {
+    background: transparent;
+    color: black;
+}
+.light-mode .input-box input:focus, .light-mode .input-box input:valid, .light-mode .input-box input:hover {
+    border-bottom: 1px solid black;
+}
+.light-mode .input-box input {
+    border-bottom: 1px solid black;
+    border: none;
+    color: black ;
+}
+.light-mode .mainbar ul li:hover .subbar ul li a:hover {
+    color: aquamarine;
+}
+.light-mode .mainbar ul li:hover .subbar {
+    background: white;
+}
+.light-mode .mainbar ul li:hover .subbar ul li {
+    border-bottom: 1px dotted #222020;
+    background: transparent;
+}
+.light-mode .switch{
+    color: black;
+}
+
+.light-mode .active, .light-mode .mainbar ul li:hover {
+    background: aquamarine;
+}
+.light-mode .c1, .light-mode .c2, .light-mode .c3, .light-mode .body{
+    background: white;
+    transition: .8s;
+    color: black;
+}
+.light-mode .mainbar {
+    background: white;
+    transition: 0.8s;
+    color: black;
+}
+.light-mode .back {
+    transition: .8s;
+    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1));
+}
+
+.back {
+    transition: .8s;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10px;
+    min-height: 100vh;
+}
+img {
+    width: 70px;
+    margin-left: -50px;
+    padding-top: 10px;
+}
+.mainbar {
+    transition: 0.8s;
+    text-align: center;
+    background: rgb(0,0,0);
+}
+.mainbar ul{
+    list-style: none;
+}
+.mainbar ul li{
+    width: 200px;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+}
+.mainbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: aquamarine;
+    background: transparent;
+}
+
+.active, .mainbar ul li:hover{
+    background: #222020;
+    border-radius: 10px;
+}
+
+.subbar{
+    display: none;  
+}
+
+.subbar ul li a{
+    font-size: 16px;
+}
+
+.mainbar ul li:hover .subbar{
+    display: block;
+    position: absolute;
+    background: rgb(0,0,0);
+    margin-top: 15px;
+    margin-left: 0;
+    border-radius: 5px;
+}
+
+.mainbar ul li:hover .subbar ul {
+    display: block;
+    margin: 10px 20px 20px 10px;
+}
+
+.mainbar ul li:hover .subbar ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid aquamarine;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.mainbar ul li:hover .subbar ul li a:hover{
+    color: lightseagreen;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto 0 auto ;
+    padding-bottom: 20px;
+    background: transparent;
+}
+
+.c1 {
+    transition: .8s;
+    width: 21%;
+    float: left;
+    height: 100%;
+    margin-left: 2%;
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+.c2 {
+    transition: .8s;
+    width: 50%;
+    margin-left: 2%;
+    float: left;
+    height: 100%;
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.c3 {
+    transition: .8s;
+    width: 21%;
+    float: right;
+    height: 100%;
+    margin-right: 2%;
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.input-box {
+    padding: 20px 20px 20px 80px;
+    border-bottom: 4px solid #222020;
+}
+
+.input-box input {
+    width: 500px;
+    margin-bottom: 15px;
+    padding: 12px 0;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+    letter-spacing: 2px;
+}
+
+.input-box input:focus, .input-box input:valid, .input-box input:hover {
+    border-bottom: 1px solid ;
+}
+button {
+    background: aquamarine;
+    border: none;
+    outline: none;
+    color: black;
+    border: 2px solid black;
+    margin-left: 20px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button:hover, button:active {
+    background-color: lightseagreen;
+
+}
+#posts, #users {
+    text-align: left;
+    color: white;
+}
+p {
+    padding: 20px 0 20px 20px;
+    text-indent: 60px;
+    border-bottom: 1px solid #222020;
+}
+.recent {
+    width: 100%;
+    height: 40px;
+    color: aquamarine;
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 23px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 100px;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 20px;
+    left: 4px;
+    bottom: 2.2px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:after{
+    width: 20px;
+    height: 19px;
+}
+
+input:checked + .slider {
+    background-color: aquamarine;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+label{
+    color: aquamarine;
+}
+.delete {
+    outline: none;
+    background: none;
+    color: aquamarine;
+    border: none;
+    padding: 15px 0 0 0;
+    margin-left: 60px;
+    border-radius: 0;
+    
+}
+.delete:hover, .delete:active, .delete:focus {
+    background: none;
+    outline: none;
+    color: lightseagreen;
+    border: none;
+}
